@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.5789;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+iframe[src^='//www.youtube.com'],
+iframe[src^='//player.vimeo.com'] {
+  width: 100%;
+}
+
+.hidden,
+[hidden] {
+  display: none;
+}
+
+[tabindex="-1"] {
+  outline-width: 0;
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Default style base</title>
+  <link rel="stylesheet" href="merged.css">
+  <script src="base.js"></script>
+</head>
+<body>
+  <header class="glass">
+    <a href="#"><h1 class="contained">Title</h1></a>
+  </header>
+
+  <div class="contained">
+    <nav class="toc">
+      <a href="#text">Text</a>
+      <a href="#lists">Lists</a>
+      <a href="#buttons">Buttons</a>
+      <a href="#form">Form</a>
+      <a href="#blockquote">Blockquote</a>
+      <a href="#figure">Images &amp; Figures</a>
+
+      <div class="glass">
+        <h1>Update theme</h1>
+        <a href="#" data-update-theme="burgundy">Red</a>
+        <a href="#" data-update-theme="skyblue">Blue</a>
+        <a href="#" data-update-theme="grasshopper">Green</a>
+        <a href="#" data-update-theme="grayscale">Black &amp; White</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="contained">
+      <h2 id="text">Text</h2>
+
+      <p>Lorem ipsum dolor <strong>sit</strong> amet, <em>consectetur adipisicing elit</em>, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation <a href="/internal">ullamco laboris nisi</a> ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim <a href="http://external">id est laborum</a>.</p>
+
+      <hr>
+
+      <h3>Preformatted</h3>
+
+      <pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </pre>
+    </section>
+
+    <hr>
+
+    <section class="contained">
+      <h2 id="lists">Lists</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipisicing elit</li>
+        <li>Sed do eiusmod</li>
+        <li>Ut aliquip ex ea
+          <ul>
+            <li>Commodo consequat</li>
+            <li>Duis aute</li>
+            <li>Irure</li>
+            <li>Dolor in reprehenderit in voluptate velit</li>
+          </ul>
+        </li>
+        <li>Ut aliquip ex ea
+          <ol>
+            <li>Commodo consequat</li>
+            <li>Duis aute</li>
+            <li>Irure</li>
+            <li>Dolor in reprehenderit in voluptate velit</li>
+          </ol>
+        </li>
+        <li>Tempor</li>
+        <li>Incididunt ut labore et dolore magna aliqua</li>
+      </ul>
+
+      <ol>
+        <li>Ut enim ad</li>
+        <li>Minim veniam</li>
+        <li>Quis</li>
+        <li>Nostrud exercitation ullamco laboris nisi</li>
+        <li>Ut aliquip ex ea
+          <ol>
+            <li>Commodo consequat</li>
+            <li>Duis aute</li>
+            <li>Irure</li>
+            <li>Dolor in reprehenderit in voluptate velit</li>
+          </ol>
+        </li>
+        <li>Ut aliquip ex ea
+          <ul>
+            <li>Commodo consequat</li>
+            <li>Duis aute</li>
+            <li>Irure</li>
+            <li>Dolor in reprehenderit in voluptate velit</li>
+          </ul>
+        </li>
+        <li>Esse cillum dolore eu</li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <div class="half">
+      <div class="col glass">
+        <section class="contained">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </div>
+
+      <div class="col">
+        <section class="contained">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="third">
+      <div class="col">
+        <section class="contained">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </div>
+
+      <div class="col glass">
+        <section class="contained">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </div>
+
+      <div class="col">
+        <section class="contained">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </div>
+    </div>
+
+    <hr>
+
+    <section class="contained">
+      <h2 id="buttons">Buttons</h2>
+
+      <a class="button" href="">Button</a>
+
+      <a class="button red" href="">Button</a>
+
+      <a class="button blue" href="">Button</a>
+
+      <a class="button green" href="">Button</a>
+    </section>
+
+    <hr>
+
+    <section class="contained">
+      <h2 id="forms">Form</h2>
+
+      <form method="post" action="">
+        <fieldset>
+          <div>
+            <label class="caption" for="f_1">Text</label>
+            <input id="f_1" type="text" name="f_1">
+          </div>
+          <div>
+            <label class="caption" for="f_2">Text</label>
+            <textarea id="f_2" name="f_2"></textarea>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <p class="caption">Radio button group</p>
+          <div>
+            <input id="f_5_1" type="radio" name="f_5">
+            <label for="f_5_1">Yes</label>
+          </div>
+          <div>
+            <input id="f_5_2" type="radio" name="f_5">
+            <label for="f_5_2">Maybe</label>
+          </div>
+          <div>
+            <input id="f_5_3" type="radio" name="f_5">
+            <label for="f_5_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <div>
+            <input id="f_3" type="checkbox" name="f_3">
+            <label for="f_3">Checkbox</label>
+          </div>
+          <div>
+            <input id="f_4" type="checkbox" name="f_4">
+            <label for="f_4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <div>
+            <label class="caption" for="f_6_1">Select (flexible, default)</label>
+            <select id="f_6_1" name="f_6_1">
+              <option>opt1</option>
+              <option>opt2</option>
+              <option>opt3</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="caption" for="f_6_2">Select (fill container)</label>
+            <select class="fill" id="f_6_2" name="f_6_2">
+              <option>fill, opt1</option>
+              <option>opt2</option>
+              <option>opt3</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="caption" for="f_6_3">Select (2-col)</label>
+            <div class="half">
+              <div class="col">
+                <select class="fill" id="f_6_3" name="f_6_3">
+                  <option>half left, opt1</option>
+                  <option>opt2</option>
+                  <option>opt3</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="fill" id="f_6_4" name="f_6_4">
+                  <option>half right, opt1</option>
+                  <option>opt2</option>
+                  <option>opt3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label class="caption" for="f_6_5">Select (3-col)</label>
+            <div class="third">
+              <div class="col">
+                <select class="fill" id="f_6_5" name="f_6_5">
+                  <option>half left, opt1</option>
+                  <option>opt2</option>
+                  <option>opt3</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="fill" id="f_6_6" name="f_6_6">
+                  <option>half right, opt1</option>
+                  <option>opt2</option>
+                  <option>opt3</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="fill" id="f_6_7" name="f_6_7">
+                  <option>half right, opt1</option>
+                  <option>opt2</option>
+                  <option>opt3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <footer>
+          <input type="submit">
+        </footer>
+      </form>
+    </section>
+
+    <hr>
+
+    <section class="contained">
+      <h2 id="blockquote">Blockquote</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </blockquote>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section>
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </blockquote>
+    </section>
+
+    <section class="contained">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <blockquote class="with-quote">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </blockquote>
+
+      <p>One with an author</p>
+
+      <blockquote class="with-quote">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <cite>Author of quote</cite>
+      </blockquote>
+    </section>
+
+    <hr>
+
+    <section class="contained">
+      <h2 id="figure">Images &amp; Figures</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <img src="uo02gaw3c0c-john-towner.jpg" alt="">
+
+      <p class="caption">Caption for the above image</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <img src="ed-hlwaknyk-george-hiles.jpg" alt="">
+    <p class="caption">Caption for the above image</p>
+
+    <section class="contained">
+      <figure class="inset-left">
+        <img class="frame" src="aketfyhq9bo-samuel-zeller.jpg" alt="">
+        <figcaption class="caption">Caption for the above image</figcaption>
+      </figure>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section class="contained">
+      <figure class="inset-right">
+        <img src="aketfyhq9bo-samuel-zeller.jpg" alt="">
+        <figcaption class="caption">Caption for the above image</figcaption>
+      </figure>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+  </main>
+
+  <footer>
+    <section class="contained">
+      <h2>Identity</h2>
+
+      <nav class="vertical">
+        <a href="#text">Text</a>
+        <a href="#lists">Lists</a>
+        <a href="#button">Buttons</a>
+        <a href="#form">Form</a>
+        <a href="#blockquote">Blockquote</a>
+        <a href="#figure">Images &amp; Figures</a>
+      </nav>
+
+    </section>
+  </footer>
+</body>
+</html>

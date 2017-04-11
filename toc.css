@@ -1,0 +1,62 @@
+.toc {
+  padding: 1em 0;
+}
+
+.toc:before {
+  color: var(--op-mid);
+  content: 'On this page';
+  display: block;
+  font-size: 75%;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.toc a {
+  border-bottom: 1px solid var(--op-light);
+  display: block;
+  padding: .4em 0;
+}
+
+.toc a:last-child {
+  border-bottom: 0;
+}
+
+.toc .glass {
+  margin: 1em -1em -1em;
+  padding: 1em;
+}
+
+.toc h1 {
+  color: var(--op-dark);
+  font-family: var(--ff-body);
+  font-size: 75%;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 48rem) { /*768*/
+  .toc {
+    background-color: transparent;
+    border: 1px solid var(--op-mid);
+    border-bottom-width: .5em;
+    float: right;
+    margin: 1em 0 2em 1em;
+    padding: 1em;
+    width: 14em;
+  }
+
+  .toc a {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 120rem) { /*1920*/
+  .toc {
+    margin-right: -15.625em;
+  }
+}

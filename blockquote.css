@@ -1,0 +1,25 @@
+blockquote {
+  border-left: .5em solid var(--op-light);
+  margin-bottom: 2em;
+  padding: 0 1em 0 2em;
+}
+
+.with-quote {
+  padding: 1em 1em 0 3em;
+}
+
+.with-quote:before {
+  content: '\201C';
+  color: var(--op-mid);
+  float: left;
+  font-family: serif;
+  font-size: 5em;
+  margin-left: -.5em;
+  margin-top: -.5em;
+}
+
+.with-quote cite {
+  color: var(--op-dark);
+  display: block;
+  text-align: right;
+}

@@ -1,0 +1,210 @@
+:root {
+  --op-light: rgba(var(--theme), .1);
+  --op-mid: rgba(var(--theme), .3);
+  --op-dark: rgba(var(--theme), .6);
+  --op-solid: rgb(var(--theme));
+
+  --col-black-light: rgba(0, 0, 0, .1);
+  --col-black-mid: rgba(0, 0, 0, .3);
+
+  --theme: var(--theme-grasshopper);
+  --theme-grayscale: 0, 0, 0;
+  --theme-skyblue: 0, 100, 200;
+  --theme-grasshopper: 40, 160, 0;
+  --theme-burgundy: 150, 50, 50;
+
+  --ff-body: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  --ff-title: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  --ff-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0 0 12.5rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--op-light);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5789;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--ff-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.75em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-title);
+  font-weight: 300;
+  padding: .5em 0;
+}
+
+p {
+  padding: 0 0 1em;
+}
+
+pre {
+  background-color: var(--col-black-light);
+  font-family: var(--ff-mono);
+  font-size: 80%;
+  font-weight: 100;
+  max-width: 100%;
+  overflow: scroll;
+  padding: 1em;
+}
+
+main {
+  background-color: white;
+  padding-bottom: 1em;
+}
+
+a {
+  color: var(--op-dark);
+  transition: color .15s ease-out;
+}
+
+a:hover {
+  color: var(--op-solid);
+  transition: color .15s ease-in;
+}
+
+hr {
+  background: var(--col-black-light);
+  border: 0;
+  height: 1px;
+  margin: 1em 0;
+}
+
+header > a {
+  color: black;
+  text-decoration: none;
+}
+
+header > a:hover {
+  color: var(--op-solid);
+}
+
+[tabindex="-1"] {
+  outline-width: 0;
+}
+
+.half .col {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.third .col {
+  display: inline-block;
+  float: left;
+  width: 33%;
+}
+
+.fill {
+  width: 100%;
+}
+
+.caption {
+  display: block;
+  font-size: 75%;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.hidden,
+[hidden] {
+  display: none;
+}
+
+.contained {
+  margin-left: .625rem;
+  margin-right: .625rem;
+  max-width: 56.25rem; /*900px*/
+}
+
+.thick {
+  height: .25em;
+}
+
+.vertical {
+  columns: 4;
+  -moz-columns: 4;
+}
+
+.vertical a {
+  display: list-item;
+  list-style-type: none;
+}
+
+.glass {
+  background-color: var(--op-light);
+  color: var(--op-mid);
+}
+
+.half:matches(:before, :after),
+.third:matches(:before, :after),
+.clearfix:matches(:before, :after) {
+  content: '';
+  display: table;
+}
+
+.half:after,
+.third:after,
+.clearfix:after {
+  clear: both;
+}
+
+iframe[src^='//www.youtube.com'],
+iframe[src^='//player.vimeo.com'] {
+  width: 100%;
+}
+
+@media screen and (min-width: 48rem) { /*768*/
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 57.5rem) {
+  .contained {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 120rem) { /*1920*/
+  body {
+    font-size: 20px;
+  }
+}

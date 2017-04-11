@@ -1,0 +1,49 @@
+.button {
+  background-color: rgba(var(--theme-grayscale), .8);
+  border-bottom: 3px solid rgba(var(--theme-grayscale), .8);
+  border-radius: .25em;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: -3px;
+  padding: .5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+.button:hover {
+  background-color: rgba(var(--theme-grayscale), .6);
+  border-bottom: 0;
+  color: white;
+  margin-top: 0;
+}
+
+.button.red {
+  background-color: rgba(var(--theme-burgundy), .8);
+  border-bottom-color: rgba(var(--theme-burgundy), .8);
+}
+
+.button.red:hover {
+  background-color: rgba(var(--theme-burgundy), .6);
+}
+
+.button.blue {
+  background-color: rgba(var(--theme-skyblue), .8);
+  border-bottom-color: rgba(var(--theme-skyblue), .8);
+}
+
+.button.blue:hover {
+  background-color: rgba(var(--theme-skyblue), .6);
+}
+
+.button.green {
+  background-color: rgba(var(--theme-grasshopper), .8);
+  border-bottom-color: rgba(var(--theme-grasshopper), .8);
+}
+
+.button.green:hover {
+  background-color: rgba(var(--theme-grasshopper), .6);
+}

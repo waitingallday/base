@@ -1,0 +1,44 @@
+img {
+  display: inline-block;
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+
+img + .caption {
+  margin-right: .625rem;
+  margin-top: -1em;
+  text-align: right;
+}
+
+.contained img + .caption {
+  margin-right: 0;
+}
+
+.frame {
+  border: 1px solid var(--col-black-mid);
+  padding: 1em;
+}
+
+@media screen and (min-width: 48rem) { /*768*/
+  .inset-left,
+  .inset-right {
+    margin-top: 0;
+    max-width: 18.75em; /*300px*/
+  }
+
+  .inset-left {
+    float: left;
+    margin-left: -9.375em;
+    margin-right: 1em;
+  }
+
+  .inset-left .caption {
+    text-align: left;
+  }
+
+  .inset-right {
+    float: right;
+    margin-left: 1em;
+    margin-right: -9.375em;
+  }
+}
